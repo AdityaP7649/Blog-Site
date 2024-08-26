@@ -19,6 +19,7 @@
 .container {
   max-width: 1440px;
   margin: auto;
+  
 }
 
 .home-main-container {
