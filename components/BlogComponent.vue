@@ -139,9 +139,6 @@
             >
           </div>
         </div>
-        <pf-modal variant="small">
-          {{ statusMessage }}
-        </pf-modal>
       </div>
       <div v-show="!currentTitle && props.id" class="create-form-section">
         <div class="create-blog-form">
@@ -209,7 +206,7 @@ const autoCloseToast = () => {
       navigateToHome();
     }
     alertMessage.value = false;
-  }, 1000);
+  }, 800);
 };
 const handleFileChange = async (event) => {
   const reader = new FileReader();
@@ -231,7 +228,7 @@ const handleFileChange = async (event) => {
 const navigateToHome = () => {
   setTimeout(() => {
     navigateTo("/");
-  }, 1000);
+  }, 50);
 };
 const formSubmit = async () => {
   const formdata = new FormData();
